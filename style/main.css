@@ -356,8 +356,6 @@ section {
   margin-top: 2.083vw;
   padding: 8.854vw 18.229vw 0 18.229vw;
   border-radius: 25px;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 @media (min-width: 1280px) {
@@ -367,18 +365,6 @@ section {
     margin-top: 0;
     padding: 8.5vh 17.5vh 0 17.5vh;
   }
-}
-
-.tablet-header__canvas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background: transparent;
 }
 
 .tablet-header__title {

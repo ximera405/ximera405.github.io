@@ -79,10 +79,26 @@
           </div>
         </nav>
         <div class="tablet-header__container">
-          <canvas class="tablet-header__canvas" id="canvas3d"></canvas>
           <h2 class="tablet-header__subtitle">DECRYPTING SENCE</h2>
           <p class="tablet-header__subtitle-addition">Web 3.0 Design</p>
           <button class="tablet-header__cross-btn" type="button">*</button>
+          <iframe
+            src="sphere_ready/index.html"
+            width="600"
+            height="600"
+            style="
+              position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
+              margin: auto;
+              width: 100%;
+              height: 100%;
+              border-radius: 50px;
+              z-index: -1;
+            "
+          ></iframe>
         </div>
       </div>
     </header>
@@ -183,11 +199,7 @@
           </div>
         </section>
 
-        <svg
-          class="career__right-side-svg"
-          viewBox="0 0 173 352"
-          fill="none"
-        >
+        <svg class="career__right-side-svg" viewBox="0 0 173 352" fill="none">
           <path
             d="M108.875 189.221L58.429 164.441C55.0855 162.968 50.2543 165.504 49.0371 168.949L105.201 196.186V258.172C110.047 258.274 114.029 254.374 114.029 249.528V197.121C114.029 193.699 112.008 190.599 108.875 189.221Z"
             fill="#D9D5C2"
@@ -315,7 +327,10 @@
         <a class="popup-header__nav-btn" id="close-popup"> Close </a>
       </div>
 
-      <div class="popup__content-container popup__content-container--close" id="popup-content">
+      <div
+        class="popup__content-container popup__content-container--close"
+        id="popup-content"
+      >
         <div class="popup-form__container">
           <div class="popup-form__title-container">
             <p class="popup-header__tablet-title">Stak</p>
@@ -383,10 +398,6 @@
         WITH US →
       </p>
     </footer>
-
-    <iframe src="sphere_ready/index.html" width="600" height="600"></iframe>
-    <iframe src="about/index.html" width="600" height="600"></iframe>
   </body>
   <script src="script.js"></script>
-  </script>
 </html>
