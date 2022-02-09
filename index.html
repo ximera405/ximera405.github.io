@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>Stak</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body class="main-page" id="main-page">
+    <header class="header">
+      <div class="mobile-header__container">
+        <nav class="header__nav invisible" id="nav-menu">
+          <div class="header__nav-title-container">
+            <p class="header__nav-title">Stak</p>
+            <button class="header__nav-close" id="close-menu">Close</button>
+          </div>
+
+          <div class="header__nav-list">
+            <a class="header__nav-item" href="career.html">
+              <p>Careers</p>
+              <p class="header__nav-item-arrow">→</p>
+            </a>
+            <a class="header__nav-item" href="about.html">
+              <p>About</p>
+              <p class="header__nav-item-arrow">→</p>
+            </a>
+            <a class="header__nav-item" id="open-popup">
+              <p>stack with us</p>
+              <p class="header__nav-item-arrow">→</p>
+            </a>
+          </div>
+        </nav>
+        <div class="header__container">
+          <div class="header__top">
+            <h1 class="header__title">Stak</h1>
+            <button class="header__nav-btn" type="button" id="menu-btn">
+              Menu
+            </button>
+          </div>
+          <img
+            class="header__img"
+            src="./assets/mobile/unform.png"
+            width="270"
+            height="270"
+          />
+          <h2 class="header__subtitle">DECRYPTING SENCE</h2>
+          <p class="header__subtitle-addition">Web 3.0 Product Design</p>
+          <div class="header__btn-group">
+            <a class="header__description-btn" href="about.html">
+              HOW WE STACK
+            </a>
+            <button class="header__cross-btn" type="button">*</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet-header__main-container">
+        <nav class="tablet-header__nav" id="nav-menu">
+          <div class="tablet-header__nav-title-container">
+            <h1 class="tablet-header__title">Stak</h1>
+          </div>
+
+          <div class="tablet-header__nav-list">
+            <a class="tablet-header__nav-item" href="career.html">
+              <p>Careers</p>
+            </a>
+            <a class="tablet-header__nav-item" href="about.html">
+              <p>About</p>
+            </a>
+            <button
+              class="tablet-header__nav-item tablet-header__nav-item--bigger"
+              id="tablet-open-popup"
+              type="button"
+            >
+              <p>work together</p>
+            </button>
+          </div>
+        </nav>
+        <div class="tablet-header__container">
+          <canvas class="tablet-header__canvas" id="canvas3d"></canvas>
+          <h2 class="tablet-header__subtitle">DECRYPTING SENCE</h2>
+          <p class="tablet-header__subtitle-addition">Web 3.0 Design</p>
+          <button class="tablet-header__cross-btn" type="button">*</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-page__content-container">
+      <section class="background__container">
+        <p class="background__subtitle">OUR BACKGROUND</p>
+        <ul class="background__list">
+          <li class="background__item background__item--1">Deutsche Bank</li>
+          <li class="background__item background__item--2">
+            Internet Computer
+          </li>
+          <li class="background__item background__item--3">Douglas Booking</li>
+          <li class="background__item background__item--4">Tomahawk.vc</li>
+          <li class="background__item background__item--5">Kaufland</li>
+          <li class="background__item background__item--6">Alfa Bank</li>
+        </ul>
+        <p class="background__text">
+          We’ve worked with some great teams at some awesome companies.
+        </p>
+      </section>
+
+      <section class="advantage__container">
+        <div class="advantage__item advantage__item--strategy">
+          <p>Digital Strategy</p>
+        </div>
+        <div class="advantage__item advantage__item--identity">
+          <p>Identity</p>
+        </div>
+        <div class="advantage__item advantage__item--design">
+          <p>Product Design</p>
+        </div>
+        <div class="advantage__item advantage__item--experience">
+          <p>User Experience</p>
+        </div>
+      </section>
+
+      <section class="contribute__container">
+        <p class="contribute__title">We contribute</p>
+        <p class="contribute__text">
+          We contribute stellar crypto projects with all our design expertise.
+          We build teams as a group of players.
+        </p>
+        <div class="contribute__btn-container">
+          <button type="button" class="contribute__btn">how we stack</button>
+          <div class="contribute__img"></div>
+        </div>
+      </section>
+
+      <div class="desktop__btn"></div>
+    </div>
+
+    <article class="career">
+      <section class="office__container">
+        <svg
+          class="office__svg"
+          width="90"
+          height="77"
+          viewBox="0 0 90 77"
+          fill="none"
+        >
+          <path
+            opacity="0.3"
+            d="M67.2749 29.2993L67.4249 29.5001H67.6755H77.0575C77.4065 29.5001 77.6481 29.8486 77.5258 30.1755L68.1314 55.2609H31.8042V38.7456C31.8042 37.5972 31.2408 36.5218 30.2966 35.8681L22.416 30.4112L22.416 30.4112C22.013 30.1322 22.2104 29.5001 22.7006 29.5001H41.8894H42.14L42.29 29.2993L54.3818 13.111C54.3818 13.111 54.3818 13.1109 54.3818 13.1109C54.5819 12.8432 54.9831 12.8433 55.183 13.1109L55.5836 12.8117L55.183 13.1109L67.2749 29.2993ZM57.7112 0.5C58.1769 0.5 58.6162 0.716306 58.9001 1.08543L77.2458 24.9348H70.0788L55.9714 6.59522C55.371 5.81464 54.194 5.81464 53.5935 6.59522L39.4862 24.9348H20.581L38.9267 1.08543C39.2106 0.716305 39.6499 0.5 40.1156 0.5H57.7112ZM23.3733 53.1927C21.8258 55.8732 18.74 56.8535 16.5261 55.5753C14.3122 54.297 13.6183 51.1346 15.1658 48.4541C15.5256 47.831 16.2732 47.1199 17.2561 46.3888C18.2263 45.6671 19.3763 44.9616 20.4852 44.3392C21.5925 43.7177 22.65 43.1841 23.4313 42.8057C23.6759 42.6872 23.8932 42.584 24.0761 42.4982C24.0933 42.6996 24.1126 42.9393 24.1323 43.2104C24.1952 44.0762 24.2618 45.2588 24.2773 46.5286C24.2927 47.8001 24.2567 49.1488 24.1168 50.3498C23.9751 51.5667 23.7331 52.5696 23.3733 53.1927ZM74.0275 75.0007C72.298 73.702 71.9031 71.5034 72.9483 70.1115C73.9936 68.7196 76.2151 68.4859 77.9446 69.7847C78.3335 70.0768 78.7642 70.6497 79.1986 71.4102C79.6251 72.1568 80.0262 73.0314 80.3729 73.8727C80.719 74.7124 81.007 75.5095 81.2088 76.0972C81.2445 76.2015 81.2776 76.2991 81.3077 76.3891C81.2129 76.3853 81.1099 76.3807 80.9998 76.3755C80.3791 76.3456 79.5333 76.2912 78.6305 76.193C77.7259 76.0946 76.7741 75.9533 75.9382 75.7518C75.0868 75.5467 74.4165 75.2928 74.0275 75.0007ZM0.5 65.3842C0.5 63.0469 2.39472 61.1522 4.73198 61.1522H87.9797C88.8194 61.1522 89.5 61.8328 89.5 62.6724C89.5 63.4736 88.8782 64.1373 88.0787 64.1895L5.00739 69.6072C2.56695 69.7663 0.5 67.8298 0.5 65.3842ZM54.5 47.5C56.2589 47.5 57.7703 46.3354 58.8157 44.6247C59.8664 42.9054 60.5 40.5619 60.5 38C60.5 35.438 59.8664 33.0946 58.8157 31.3753C57.7703 29.6646 56.2589 28.5 54.5 28.5C52.7411 28.5 51.2297 29.6646 50.1843 31.3753C49.1336 33.0946 48.5 35.438 48.5 38C48.5 40.5619 49.1336 42.9054 50.1843 44.6247C51.2297 46.3354 52.7411 47.5 54.5 47.5Z"
+            stroke="black"
+          />
+        </svg>
+        <div class="office_content-container">
+          <p class="office__city">Tyumen, russia</p>
+          <p class="office__text">
+            Our snowy studio is in the middle of the siberian city. Zoom works
+            well here.
+          </p>
+          <div class="office__img"></div>
+        </div>
+      </section>
+
+      <div class="career__main-container" id="career-btn">
+        <section class="career__left-side">
+          <p class="career__left-side-title">Careers</p>
+          <div class="career__left-side-enter">
+            <p class="career__left-side-text">Enter</p>
+            <svg
+              class="career__left-side-svg"
+              width="37"
+              height="45"
+              viewBox="0 0 37 45"
+              fill="none"
+            >
+              <path
+                d="M1 36H28C30.8003 36 32.2004 36 33.27 35.455C34.2108 34.9757 34.9757 34.2108 35.455 33.27C36 32.2004 36 30.8003 36 28V9.5C36 6.69974 36 5.29961 35.455 4.23005C34.9757 3.28924 34.2108 2.52433 33.27 2.04497C32.2004 1.5 30.8003 1.5 28 1.5H16.5M1 36L8.5 28.5M1 36L8.5 43.5"
+                stroke="#282628"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <svg
+          class="career__right-side-svg"
+          viewBox="0 0 173 352"
+          fill="none"
+        >
+          <path
+            d="M108.875 189.221L58.429 164.441C55.0855 162.968 50.2543 165.504 49.0371 168.949L105.201 196.186V258.172C110.047 258.274 114.029 254.374 114.029 249.528V197.121C114.029 193.699 112.008 190.599 108.875 189.221Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M138.493 77.318L138.448 77.3894H171.508V1.12695H167.676C160.313 1.12695 153.505 5.04526 149.809 11.413C144.301 20.8913 136.562 35.5014 132.438 49.0634C142.122 56.1749 144.628 67.8735 138.493 77.318Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M12.7577 18.9867C22.4427 23.5888 36.6621 29.7236 49.9009 33.0596C57.1665 24.8661 69.113 22.7435 78.7529 27.9353L78.828 27.9767V0H0.950195V0.319326C0.950195 8.29871 5.54848 15.5605 12.7577 18.9867Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M172 195.014C171.996 194.702 171.996 194.387 171.996 194.075C171.996 181.97 168.889 171.568 162.758 163.156C156.552 154.64 147.524 148.565 135.935 145.101C135.604 145.004 135.274 144.895 134.947 144.786C134.624 144.681 134.301 144.572 133.978 144.478L61.7536 121.449L128.523 74.9625L128.831 74.7484L101.346 35.0581L101.034 35.276C100.369 35.7456 34.2766 82.4272 11.612 98.7729C4.75211 104.051 0.653476 111.873 0.0711765 120.799C-0.458528 128.962 1.98713 137.479 6.78077 144.158C9.22267 147.558 12.2018 150.462 15.6392 152.788C16.4808 153.355 17.4425 153.866 18.4718 154.283L33.0181 161.943C28.262 161.357 -5.65039 159.569 15.0945 231.492L12.57 238.517C11.9764 240.163 11.4279 241.85 10.9395 243.525C8.79064 250.937 7.70118 258.642 7.70118 266.434C7.70118 275.627 9.07616 284.5 11.7134 292.814L4.39146 314.979C0.901423 326.798 2.86246 332.463 8.27596 340.006C10.2257 342.723 12.6038 345.04 15.35 346.893C20.076 350.086 25.5609 351.675 31.0458 351.675C36.7974 351.675 42.549 349.924 47.4102 346.434C49.5103 344.928 51.7719 342.764 53.5676 340.6C64.6125 345.781 76.931 348.523 89.7979 348.523C112.395 348.523 133.008 340.758 147.836 326.655C163.57 311.692 171.883 290.868 171.883 266.438L171.992 197.103C172.011 196.404 172.004 195.698 172 195.014ZM171.237 197.091L171.128 266.438C171.128 290.658 162.893 311.29 147.314 326.11C132.629 340.078 112.2 347.772 89.7979 347.772C77.1113 347.772 64.9619 345.082 54.0635 340.003C54.5406 339.394 54.9801 338.793 55.3633 338.211C55.8141 337.523 91.4246 277.993 92.9386 275.461L93.1339 275.138L54.9163 252.59L20.5343 311.519L21.1842 311.898L55.1792 253.62L92.097 275.401C89.1968 280.251 55.1642 337.136 54.7322 337.801C52.9139 340.585 49.7958 343.812 46.9782 345.833C37.7366 352.464 25.2002 352.644 15.7782 346.276C13.1072 344.473 10.793 342.215 8.89583 339.574C3.62884 332.234 1.7204 326.715 5.11652 315.208L24.9711 255.1L24.2573 254.863L12.1304 291.585C9.71856 283.636 8.46005 275.187 8.46005 266.441C8.46005 258.721 9.542 251.084 11.6683 243.743C12.1492 242.082 12.6939 240.411 13.2837 238.78L15.4589 232.728C15.4852 232.818 15.5115 232.908 15.5378 233.002L41.3168 163.825C41.3168 163.825 63.4404 99.622 33.8183 161.519L18.7987 153.611C17.7844 153.197 16.8639 152.713 16.0675 152.172C12.7014 149.899 9.78619 147.055 7.39688 143.726C2.70092 137.178 0.304096 128.842 0.826288 120.848C1.3898 112.143 5.38701 104.513 12.0628 99.3778C33.9159 83.6144 96.1957 39.6151 101.162 36.11L127.783 74.5605L60.6942 121.265L60.0706 121.701L133.752 145.195C134.071 145.289 134.387 145.394 134.706 145.5C135.041 145.609 135.375 145.721 135.713 145.823C147.145 149.238 156.037 155.222 162.146 163.604C168.179 171.883 171.241 182.136 171.241 194.078C171.241 194.394 171.245 194.71 171.245 195.021C171.252 195.694 171.26 196.393 171.237 197.091Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M78.7003 227.183C78.4185 242.319 78.6965 256.351 78.7003 256.49L78.7078 256.858H96.8042V210.413L96.4059 210.439C96.2294 210.447 78.9896 211.713 78.7003 227.183ZM96.0528 256.106H79.4441C79.4028 253.792 79.1962 240.952 79.4516 227.198C79.5681 221.011 82.4458 216.439 88.0058 213.61C91.4432 211.863 94.8995 211.356 96.049 211.228V256.106H96.0528Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M72.3291 189.987L67.7759 187.696C67.7759 187.696 67.7759 187.699 67.7722 187.699C66.7804 189.442 62.0356 190.539 58.4291 188.481C55.2508 186.67 54.0149 183.022 54.4431 180.986L50.6075 179.055C47.8538 177.669 44.5027 178.86 43.2404 181.673L35.9072 198.019C58.384 207.039 72.3291 189.987 72.3291 189.987Z"
+            fill="#D9D5C2"
+          />
+          <path
+            d="M80.8642 200.172L79.6733 199.259C79.6207 199.326 74.3086 206.119 64.7251 208.647L65.1083 210.101C75.2065 207.434 80.6388 200.465 80.8642 200.172Z"
+            fill="#D9D5C2"
+          />
+        </svg>
+      </div>
+    </article>
+
+    <section class="soon">
+      <p class="soon__title">SOON</p>
+
+      <svg
+        width="272"
+        height="285"
+        viewBox="0 0 272 285"
+        fill="none"
+        class="soon__svg"
+      >
+        <line
+          y1="-0.5"
+          x2="191.591"
+          y2="-0.5"
+          transform="matrix(0.775331 -0.631555 0.63435 0.773046 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="122.822"
+          y2="-0.5"
+          transform="matrix(-0.17161 -0.985165 0.985377 -0.170387 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="126.869"
+          y2="-0.5"
+          transform="matrix(0.300627 -0.953742 0.954373 0.298618 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="105.414"
+          y2="-0.5"
+          transform="matrix(-0.62841 -0.777882 0.780138 -0.625607 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          x1="82.3027"
+          y1="122.5"
+          x2="0.000152588"
+          y2="122.5"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="175.021"
+          y2="-0.5"
+          transform="matrix(-0.37849 0.925605 -0.926577 -0.376106 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="166.429"
+          y2="-0.5"
+          transform="matrix(0.229168 0.973387 -0.973761 0.227573 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="201.4"
+          y2="-0.5"
+          transform="matrix(0.737568 0.675273 -0.677976 0.735084 82.3027 122)"
+          stroke="black"
+        />
+        <line
+          y1="-0.5"
+          x2="192.099"
+          y2="-0.5"
+          transform="matrix(0.935251 0.353985 -0.356271 0.934383 82.3027 122)"
+          stroke="black"
+        />
+        <line x1="82.3027" y1="121.5" x2="272" y2="121.5" stroke="black" />
+        <line
+          y1="-0.5"
+          x2="106.76"
+          y2="-0.5"
+          transform="matrix(-0.770912 0.636942 -0.639728 -0.768601 82.3027 122)"
+          stroke="black"
+        />
+      </svg>
+      <p class="soon__laboratory">laboratory</p>
+      <p class="soon__text">
+        Our snowy studio is in the middle of the siberian city. Zoom works well
+        here
+      </p>
+    </section>
+
+    <section class="popup popup__close" id="popup">
+      <div class="popup-header">
+        <h1 class="popup-header__title">Stak</h1>
+        <a class="popup-header__nav-btn" id="close-popup"> Close </a>
+      </div>
+
+      <div class="popup__content-container popup__content-container--close" id="popup-content">
+        <div class="popup-form__container">
+          <div class="popup-form__title-container">
+            <p class="popup-header__tablet-title">Stak</p>
+            <img
+              class="popup-form__img"
+              src="./assets/mobile/popup-logo.png"
+              width="66"
+              height="63"
+            />
+          </div>
+          <form class="popup-form" action="">
+            <div class="form__group field">
+              <input
+                class="form__field popup-form__name"
+                type="text"
+                id="project"
+                placeholder="YOUR PROJECT"
+              />
+              <label class="form__label" for="project">YOUR PROJECT</label>
+            </div>
+
+            <div class="form__group field popup-form__description">
+              <input
+                class="form__field"
+                type="text"
+                id="description"
+                placeholder="A few words about"
+              />
+              <label class="form__label" for="description"
+                >A few words about</label
+              >
+            </div>
+
+            <button class="popup-form__submit-btn" type="submit">
+              COLLABORATE
+            </button>
+
+            <p class="popup-form__text">
+              We contribute stellar crypto projects with all our design
+              expertise. We build teams as a group of.
+            </p>
+
+            <p class="popup-form__mail">hello@stak.design</p>
+            <p class="popup-form__tg">tg: telestak</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer__title">CONTACTS</p>
+      <div class="footer__text-container">
+        <p class="footer__text">hello@stak.design</p>
+        <p class="footer__text">tg: telestak</p>
+      </div>
+
+      <p class="footer__title">LOCATION</p>
+      <div class="footer__text-container">
+        <p class="footer__text">Kirova 40/38</p>
+        <p class="footer__text">Tyumen, Russia, 625000</p>
+      </div>
+
+      <p class="footer__stack" id="stack-with-us-btn">
+        STACK <br class="footer__new-line" />
+        WITH US →
+      </p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+  <script src="runtime.js">
+  </script>
+</html>

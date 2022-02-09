@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Faktum';
+    font-weight: normal;
+    font-style: normal;
+    src: url('font.woff2') format('woff2'),
+        url('font.woff') format('woff');
+}
