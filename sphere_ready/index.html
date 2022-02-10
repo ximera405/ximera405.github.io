@@ -12,8 +12,8 @@
         background: rgba(255, 255, 255, 1);
       }
       canvas {
-        width: 2000px;
-        height: 2000px;
+        width: 2500px;
+        height: 2500px;
         outline: none;
       }
       #container {
@@ -21,28 +21,11 @@
         height: 100%;
         position: relative;
       }
-
-      .spline-watermark {
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
-        width: 32px;
-        height: 32px;
-        z-index: 2;
-      }
-      .spline-watermark:hover {
-        opacity: 0.8;
-      }
-      .spline-watermark img {
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
     </style>
   </head>
   <body>
     <div id="container">
-      <canvas id="canvas3d"></canvas>
+      <canvas id="canvas3d" style="width: 150%; height: 150%;"></canvas>
     </div>
     <script type="module">
       import { Application } from './runtime.js';
