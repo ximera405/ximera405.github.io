@@ -35,6 +35,7 @@ $desktop-font-size-biggest: calc(58px + 1.25vh); // 68 px
 // 60 16vw
 // 64 17.067vw
 // 65 17.333vw
+// 72
 // 80 21.333vw
 // 82 21.867vw
 // 90 24vw
@@ -161,6 +162,7 @@ $desktop-font-size-biggest: calc(58px + 1.25vh); // 68 px
 // 727 193.867vw 90.875vh
 // 754 94.250vh
 // 800 100vh
+// 976 76.250vh
 // 1065 133.125vh
 // 1144 143vh
 
@@ -1834,18 +1836,15 @@ section {
 
     margin: 0 auto;
 
-    background-image: url("../assets/mobile/figures.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    border: none;
 
     @media (min-width: 768px) {
       height: 53.125vw;
-      background-image: url("../assets/tablet/figures.png");
     }
 
     @media (min-width: 1280px) {
-      height: 94.25vh;
-      background-image: url("../assets/desktop/figures.png");
+      width: 74.219vh;
+      height: 94.250vh;
     }
   }
 }
@@ -2017,13 +2016,13 @@ section {
   }
 
   &__content-container {
-    height: calc(100% - 72px);
+    height: calc(100% - 19.2vw);
 
     @media (min-width: 768px) {
       position: absolute;
 
-      width: 90.625vw;
-      height: 60%;
+      width: 93.75vw;
+      height: 76.172vw;
 
       top: unset;
       bottom: 0;
@@ -2033,8 +2032,8 @@ section {
     }
 
     @media (min-width: 1280px) {
-      width: 976px;
-      height: calc(100% - 9vh);
+      width: 76.25vh;
+      height: 67.5vh;
     }
 
     &--close {
@@ -2095,8 +2094,8 @@ section {
   }
 
   &__nav-btn {
-    width: 92px;
-    height: 40px;
+    width: 24vw;
+    height: 10.667vw;
     line-height: 10.667vw;
 
     background: #efefef;
@@ -2106,6 +2105,18 @@ section {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+
+    @media (min-width: 768px) {
+      width: 11.719vw;
+      height: 5.208vw;
+      line-height: 5.208vw;
+    }
+
+    @media (min-width: 1280px) {
+      width: 11.25vh;
+      height: 5vh;
+      line-height: 5vh;
+    }
   }
 
   &__title {
@@ -2126,6 +2137,10 @@ section {
     @media (min-width: 768px) {
       display: inline-block;
     }
+
+    @media (min-width: 768px) {
+      font-size: $desktop-font-size-medium;
+    }
   }
 }
 
@@ -2145,7 +2160,7 @@ section {
     align-items: center;
     text-align: center;
 
-    margin-top: 20px;
+    margin-top: 5.333vw;
     height: 100%;
 
     border-top-right-radius: 25px;
@@ -2158,6 +2173,11 @@ section {
       flex-wrap: nowrap;
 
       text-align: left;
+      margin-top: 2.604vw;
+    }
+
+    @media (min-width: 1280px) {
+      margin-top: 2.5vh;
     }
   }
 
@@ -2174,12 +2194,16 @@ section {
       justify-content: space-between;
       align-items: center;
 
-      padding-left: 40px;
+      padding-left: 5.208vw;
+    }
+
+    @media (min-width: 1280px) {
+      padding-left: 5vh;
     }
   }
 
   &__img {
-    margin-top: 40px;
+    margin-top: 5.208vw;
 
     @media (min-width: 768px) {
       margin-top: 0;
@@ -2206,7 +2230,11 @@ section {
     @media (min-width: 768px) {
       width: 186px;
       height: 48px;
-      margin: 97px 0 0 25px;
+      margin: 12.37vw 0 0 3.125vw;
+    }
+
+    @media (min-width: 1280px) {
+      margin: 3vh 0 0 3vh;
     }
   }
 
@@ -2218,7 +2246,13 @@ section {
     font-size: $mobile-font-size-smallest;
 
     @media (min-width: 768px) {
-      padding-right: 96px;
+      padding-right: 12.37vw;
+      font-size: $tablet-font-size-smallest;
+    }
+
+    @media (min-width: 1280px) {
+      padding-right: 11.875vh;
+      font-size: $desktop-font-size-smallest;
     }
   }
 
@@ -2234,14 +2268,21 @@ section {
 
   &__mail {
     margin-top: 22px;
-    font-size: $mobile-font-size-smallest;
     font-family: $font-basier;
   }
 
   &__mail,
   &__tg {
+    font-size: $mobile-font-size-smallest;
+
     @media (min-width: 768px) {
-      margin-left: 25px;
+      margin-left: 3.125vw;
+      font-size: $tablet-font-size-smallest;
+    }
+
+    @media (min-width: 1280px) {
+      margin-left: 3vh;
+      font-size: $desktop-font-size-smallest;
     }
   }
 
@@ -2260,6 +2301,16 @@ $gray: #9b9b9b;
   padding: 15px 24px 25px 24px;
   margin-top: 32px;
   width: 100%;
+
+  @media (min-width: 768px) {
+    padding: 2.083vw 3.125vw 3.125vw 3.125vw;
+    margin-top: 3.906vw;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 2vh 3vh 3vh 3vh;
+    margin-top: 4vh;
+  }
 }
 
 .form__field {

@@ -1917,22 +1917,19 @@ section {
   width: 100%;
   height: 75.2vw;
   margin: 0 auto;
-  background-image: url("../assets/mobile/figures.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: none;
 }
 
 @media (min-width: 768px) {
   .introduction__img {
     height: 53.125vw;
-    background-image: url("../assets/tablet/figures.png");
   }
 }
 
 @media (min-width: 1280px) {
   .introduction__img {
-    height: 94.25vh;
-    background-image: url("../assets/desktop/figures.png");
+    width: 74.219vh;
+    height: 94.250vh;
   }
 }
 
@@ -2152,14 +2149,14 @@ section {
 }
 
 .popup__content-container {
-  height: calc(100% - 72px);
+  height: calc(100% - 19.2vw);
 }
 
 @media (min-width: 768px) {
   .popup__content-container {
     position: absolute;
-    width: 90.625vw;
-    height: 60%;
+    width: 93.75vw;
+    height: 76.172vw;
     top: unset;
     bottom: 0;
     right: 0;
@@ -2170,8 +2167,8 @@ section {
 
 @media (min-width: 1280px) {
   .popup__content-container {
-    width: 976px;
-    height: calc(100% - 9vh);
+    width: 76.25vh;
+    height: 67.5vh;
   }
 }
 
@@ -2242,8 +2239,8 @@ section {
 }
 
 .popup-header__nav-btn {
-  width: 92px;
-  height: 40px;
+  width: 24vw;
+  height: 10.667vw;
   line-height: 10.667vw;
   background: #efefef;
   border-radius: 130px;
@@ -2251,6 +2248,22 @@ section {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .popup-header__nav-btn {
+    width: 11.719vw;
+    height: 5.208vw;
+    line-height: 5.208vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-header__nav-btn {
+    width: 11.25vh;
+    height: 5vh;
+    line-height: 5vh;
+  }
 }
 
 .popup-header__title {
@@ -2273,6 +2286,12 @@ section {
 @media (min-width: 768px) {
   .popup-header__tablet-title {
     display: inline-block;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup-header__tablet-title {
+    font-size: calc(8px + 1.25vh);
   }
 }
 
@@ -2307,7 +2326,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5.333vw;
   height: 100%;
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
@@ -2326,6 +2345,13 @@ section {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     text-align: left;
+    margin-top: 2.604vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-form__container {
+    margin-top: 2.5vh;
   }
 }
 
@@ -2348,12 +2374,18 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 40px;
+    padding-left: 5.208vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-form__title-container {
+    padding-left: 5vh;
   }
 }
 
 .popup-form__img {
-  margin-top: 40px;
+  margin-top: 5.208vw;
 }
 
 @media (min-width: 768px) {
@@ -2382,7 +2414,13 @@ section {
   .popup-form__submit-btn {
     width: 186px;
     height: 48px;
-    margin: 97px 0 0 25px;
+    margin: 12.37vw 0 0 3.125vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-form__submit-btn {
+    margin: 3vh 0 0 3vh;
   }
 }
 
@@ -2396,7 +2434,15 @@ section {
 
 @media (min-width: 768px) {
   .popup-form__text {
-    padding-right: 96px;
+    padding-right: 12.37vw;
+    font-size: calc(4px + 1.302vw);
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-form__text {
+    padding-right: 11.875vh;
+    font-size: calc(4px + 1.25vh);
   }
 }
 
@@ -2412,13 +2458,24 @@ section {
 
 .popup-form__mail {
   margin-top: 22px;
-  font-size: calc(4px + 2.667vw);
   font-family: "Basier Square";
+}
+
+.popup-form__mail, .popup-form__tg {
+  font-size: calc(4px + 2.667vw);
 }
 
 @media (min-width: 768px) {
   .popup-form__mail, .popup-form__tg {
-    margin-left: 25px;
+    margin-left: 3.125vw;
+    font-size: calc(4px + 1.302vw);
+  }
+}
+
+@media (min-width: 1280px) {
+  .popup-form__mail, .popup-form__tg {
+    margin-left: 3vh;
+    font-size: calc(4px + 1.25vh);
   }
 }
 
@@ -2433,6 +2490,20 @@ section {
   padding: 15px 24px 25px 24px;
   margin-top: 32px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form__group {
+    padding: 2.083vw 3.125vw 3.125vw 3.125vw;
+    margin-top: 3.906vw;
+  }
+}
+
+@media (min-width: 1280px) {
+  .form__group {
+    padding: 2vh 3vh 3vh 3vh;
+    margin-top: 4vh;
+  }
 }
 
 .form__field {
