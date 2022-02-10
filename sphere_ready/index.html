@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        position: fixed;
-        background: rgba(255, 255, 255, 1);
-      }
-      canvas {
-        width: 2500px;
-        height: 2500px;
-        outline: none;
-      }
-      #container {
-        width: 100%;
-        height: 100%;
-        position: relative;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <canvas id="canvas3d" style="width: 150%; height: 150%;"></canvas>
-    </div>
-    <script type="module">
-      import { Application } from './runtime.js';
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      position: fixed;
+      background: rgba(255, 255, 255, 1);
+    }
+
+    canvas {
+      width: 2500px;
+      height: 2500px;
+      outline: none;
+    }
+
+    #container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <canvas id="canvas3d" style="width: 2000px; height: 2000px; position: absolute; right: 0; top: 0; bottom: 0; left: 0;
+      margin:auto"></canvas>
+  </div>
+  <script type="module">
+    import { Application } from './runtime.js';
       const app = new Application();
       app.load('./scene.json');
     </script>
-  </body>
+</body>
+
 </html>
